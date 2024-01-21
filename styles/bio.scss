@@ -446,6 +446,160 @@ body {
     }
 }
 
+.comments {
+    width: 100%;
+    height: auto;
+
+    @include mobile {
+        padding: 24px 1rem 1rem 1rem;
+    }
+
+    @include tablet {
+        padding: 36px 70px;
+    }
+
+    @include desktop {
+        padding: 48px 125px;
+    }
+
+    &__heading {
+        color: c.$primaryblack;
+        font-size: 2rem;
+
+        @include mobile {
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+        }
+
+        @include tablet {
+            margin-bottom: 2rem;
+        }
+
+        @include desktop {
+            margin-bottom: 2.5rem;
+            font-size: 2.5rem;
+            align-items: start;
+        }
+    }
+
+    &__container {
+        @include desktop {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.commentsForm label {
+    color: c.$primarysilver;
+    display: block;
+    margin-bottom: 10px;
+
+    @include mobile {
+        font-size: 1rem;
+    }
+
+    @include tablet {
+        font-size: 1.2rem;
+    }
+
+    @include desktop {
+        font-size: 1.5rem;
+    }
+}
+
+.commentsForm input, .commentsForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: c.$secondarymercury;
+
+    @include mobile {
+        font-size: 1rem;
+    }
+
+    @include tablet {
+        font-size: 1.2rem;
+    }
+}
+
+.commentsForm button {
+    border-radius: 4px;
+    background-color: c.$primaryblack;
+    color: c.$primarywhite;
+    padding: 0.5rem 0;
+    border-color: c.$primaryblack;
+    border: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.commentsList {
+    list-style-type: none;
+}
+
+.comment-name {
+    padding-top: 1rem;
+    border-top: 1px solid c.$secondarymercury;
+
+    @include mobile {
+        font-size: 1rem;
+    }
+
+    @include tablet {
+        font-size: 1.2rem;
+    }
+
+    @include desktop {
+        font-size: 1.5rem;
+    }
+}
+
+.comment-date {
+    color: c.$primarysilver;
+    text-align: end;
+    padding-bottom: 0.5rem;
+
+    @include mobile {
+        font-size: 1rem;
+    }
+
+    @include tablet {
+        font-size: 1.2rem;
+    }
+
+    @include desktop {
+        font-size: 1.5rem;
+    }
+}
+
+.comment-text {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid c.$secondarymercury;
+
+    @include mobile {
+        font-size: 1rem;
+    }
+
+    @include tablet {
+        font-size: 1.2rem;
+    }
+
+    @include desktop {
+        font-size: 1.5rem;
+    }
+}
+
 .footer {
     width: 100%;
     height: auto;
